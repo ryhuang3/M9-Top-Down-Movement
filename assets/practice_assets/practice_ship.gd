@@ -1,13 +1,15 @@
 extends CharacterBody2D
+const RUNNER_DOWN = preload("res://assets/runner_down.png")
+const RUNNER_DOWN_RIGHT = preload("res://assets/runner_down_right.png")
+const RUNNER_RIGHT = preload("res://assets/runner_right.png")
+const RUNNER_UP = preload("res://assets/runner_up.png")
+const RUNNER_UP_RIGHT = preload("res://assets/runner_up_right.png")
 
 @onready var sprite_2d: Sprite2D = %Sprite2D
 @onready var camera_2d: Camera2D = %Camera2D
 
-## Closest possible value. Higher is closer
 @export var max_zoom_factor := 1.0
-## Farthest possible value. Lower is farther
 @export var min_zoom_factor := 0.7
-## Maximum speed attained by the ship
 @export var max_speed := 1000.0
 
 var direction := Vector2.ZERO

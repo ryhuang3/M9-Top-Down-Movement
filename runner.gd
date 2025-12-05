@@ -1,10 +1,11 @@
 extends CharacterBody2D
 
-const RUNNER_DOWN = preload("res://assets/runner_down.png")
-const RUNNER_DOWN_RIGHT = preload("res://assets/runner_down_right.png")
-const RUNNER_RIGHT = preload("res://assets/runner_right.png")
-const RUNNER_UP_RIGHT = preload("res://assets/runner_up_right.png")
-const RUNNER_UP = preload("res://assets/runner_up.png")
+
+const RUNNER_DOWN = preload("uid://c0i1ik45p7rhh")
+const RUNNER_DOWN_RIGHT = preload("uid://cst3aklarj68")
+const RUNNER_RIGHT = preload("uid://b4etxv4c5w1mq")
+const RUNNER_UP = preload("uid://dtrvq16cx035")
+const RUNNER_UP_RIGHT = preload("uid://c7x3s5c2r5l86")
 
 const UP_RIGHT = Vector2.UP + Vector2.RIGHT
 const UP_LEFT = Vector2.UP + Vector2.LEFT
@@ -13,7 +14,7 @@ const DOWN_LEFT = Vector2.DOWN + Vector2.LEFT
 
 var max_speed := 600.0
 
-@onready var _skin: Sprite2D = $_skin
+@onready var _skin: Sprite2D = $skin
 
 
 func _physics_process(_delta: float) -> void:

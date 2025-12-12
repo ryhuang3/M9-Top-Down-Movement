@@ -41,19 +41,21 @@ scale_curve = SubResource("CurveTexture_pb15w")
 alpha_curve = SubResource("CurveTexture_d46nv")
 
 [node name="Runner" type="CharacterBody2D"]
+position = Vector2(0, 53)
 motion_mode = 1
 script = ExtResource("1_h1hi2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1
-position = Vector2(0, 23)
+position = Vector2(0, -78)
 shape = SubResource("CircleShape2D_f7b3c")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -101)
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 0.15686275)
-position = Vector2(4.7683716e-07, 34)
+position = Vector2(0, -67)
 scale = Vector2(0.6432292, 0.6328125)
 texture = ExtResource("2_2nvb5")
 
@@ -69,11 +71,12 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_cl8lt")
-position = Vector2(0, -7)
+position = Vector2(0, -108)
 texture = SubResource("ViewportTexture_d46nv")
 
 [node name="Dust" type="GPUParticles2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(0, -101)
 emitting = false
 texture = ExtResource("5_x5rx3")
 process_material = SubResource("ParticleProcessMaterial_28xeg")

@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://p6krymt155ab"]
+[gd_scene load_steps=11 format=3 uid="uid://p6krymt155ab"]
 
 [ext_resource type="Script" uid="uid://dacup40k4uuox" path="res://game.gd" id="1_r0x5m"]
 [ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="1_sb48q"]
 [ext_resource type="PackedScene" uid="uid://bw7oebjpdt5r8" path="res://lessons/runner.tscn" id="1_xkndl"]
 [ext_resource type="PackedScene" uid="uid://l5vkm11cgaib" path="res://lessons/simple_obstacle.tscn" id="2_u44n3"]
 [ext_resource type="PackedScene" uid="uid://c6m5ktrjrtgba" path="res://circuit.tscn" id="3_u44n3"]
+[ext_resource type="PackedScene" uid="uid://budpgxkjtmw1f" path="res://lessons/bouncer.tscn" id="4_yx171"]
 [ext_resource type="PackedScene" uid="uid://xl56q8amb611" path="res://assets/finish_line/finish_line.tscn" id="5_t88pq"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_joorw"]
 [ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="8_2vekm"]
@@ -23,7 +24,11 @@ texture = ExtResource("1_sb48q")
 
 [node name="Runner" parent="." instance=ExtResource("1_xkndl")]
 unique_name_in_owner = true
-position = Vector2(549, 1182)
+position = Vector2(768, 960)
+
+[node name="Bouncer" parent="." instance=ExtResource("4_yx171")]
+unique_name_in_owner = true
+position = Vector2(606, 1144)
 
 [node name="Circuit" parent="." instance=ExtResource("3_u44n3")]
 position = Vector2(-22, 38)
@@ -64,7 +69,7 @@ offset_top = -46.0
 offset_right = 11.0
 offset_bottom = -6.0
 menu_opened_amount = 1.0
-animation_duration = null
+animation_duration = 2.3
 
 [node name="SimpleObstacle" parent="." instance=ExtResource("2_u44n3")]
 light_mask = 3

@@ -31,6 +31,7 @@ unique_name_in_owner = true
 position = Vector2(606, 1144)
 
 [node name="Circuit" parent="." instance=ExtResource("3_u44n3")]
+visible = false
 position = Vector2(-22, 38)
 
 [node name="FinishLine" parent="." instance=ExtResource("5_t88pq")]

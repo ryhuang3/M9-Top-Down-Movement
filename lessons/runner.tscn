@@ -46,6 +46,7 @@ motion_mode = 1
 script = ExtResource("1_h1hi2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 z_index = 1
 position = Vector2(0, -78)
 shape = SubResource("CircleShape2D_f7b3c")

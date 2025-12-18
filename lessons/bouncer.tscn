@@ -44,11 +44,12 @@ alpha_curve = SubResource("CurveTexture_d46nv")
 radius = 35.0
 
 [node name="Bouncer" type="CharacterBody2D"]
-position = Vector2(0, 53)
+position = Vector2(1, 77)
 motion_mode = 1
 script = ExtResource("1_o17vw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 z_index = 1
 position = Vector2(0, -78)
 shape = SubResource("CircleShape2D_f7b3c")
@@ -88,5 +89,18 @@ process_material = SubResource("ParticleProcessMaterial_28xeg")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+visible = false
 position = Vector2(0, -78)
 shape = SubResource("CircleShape2D_o17vw")
+
+[node name="Raycasts" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -78)
+
+[node name="RayCast2D2" type="RayCast2D" parent="Raycasts"]
+rotation = 2.3684306
+target_position = Vector2(100, 0)
+
+[node name="RayCast2D" type="RayCast2D" parent="Raycasts"]
+rotation = 0.7986567
+target_position = Vector2(100, 0)
